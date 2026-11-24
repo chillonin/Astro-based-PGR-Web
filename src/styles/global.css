@@ -1,0 +1,76 @@
+/* 梦境体验页的基础层：深色海面、冷调微光、留白与呼吸感 */
+:root {
+  --night: #050a13;
+  --night-2: #0a1524;
+  --mist: #e6f0f7;
+  --mist-2: #a9c1d2;
+  --mist-3: #7e97a8;
+  --glow: #9fdcee;
+  --gold: #e3cea2;
+  --line: rgba(198, 226, 240, 0.2);
+  --line-soft: rgba(198, 226, 240, 0.11);
+
+  --font-display: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  --font-latin: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-ui: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: var(--night);
+  color: var(--mist);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--night);
+  font-family: var(--font-ui);
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
+::selection {
+  background: rgba(159, 220, 238, 0.28);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 1px solid rgba(230, 240, 247, 0.85);
+  outline-offset: 5px;
+  border-radius: 2px;
+}
